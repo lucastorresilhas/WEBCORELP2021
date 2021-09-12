@@ -12,17 +12,43 @@ namespace WEBCORELP2021.Models.Dominio
     public class Paciente
     {
         [Key]
-        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         [DisplayName("ID")]
+        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int id { get; set; }
-        [StringLength(35)]
+
         [DisplayName("Paciente")]
+        [StringLength(45, ErrorMessage ="Tamanho inválido.", MinimumLength = 5)]
         [Required(ErrorMessage ="Campo Obrigatório!")]
         public string nome { get; set; }
 
+        [DisplayName("Cidade")]
+        [StringLength(25, ErrorMessage ="Tamanho inválido.")]
+        [Required(ErrorMessage ="Campo Obrigatório!")]
         public string cidade { get; set; }
-        public int idade { get; set; }
+
+        [DisplayName("Endereco")]
+        [StringLength(25, ErrorMessage ="Tamanho inválido.")]
+        [Required(ErrorMessage ="Campo Obrigatório!")]
         public string endereco { get; set; }
+
+        [DisplayName("Idade")]
+        [Required(ErrorMessage ="Campo Obrigatório!")]
+        public int idade { get; set; }
+
+        [DisplayName("E-mail")]
+        [StringLength(50, ErrorMessage ="Tamanho inválido.")]
+        //[DataType(DataType.EmailAddress, ErrorMessage ="E-mail inválido.")]
+        [RegularExpression("^[a-zA-Z0-9+-]+[a-zA-Z0-9.+-][a-zA-Z0-9+-]+@[a-zA-Z0-9+-]+[a-zA-Z0-9._+-][.]{1,1}[a-zA-Z]{2,}$", ErrorMessage = "Email inválido")]
+        public string email { get; set; }
+
+        [DisplayName("Numero")]
+        [StringLength(11, ErrorMessage ="Insira apenas o DDD e o número.")]
+        public string numero { get; set; }
+
+        [DisplayName("CPF")]
+        [StringLength(14)]
+        public string cpf { get; set; }
+
         public ICollection<PlanoDeSaude> planoDeSaude { get; set; }
         public ICollection<Consulta> consultas { get; set; }
     }
