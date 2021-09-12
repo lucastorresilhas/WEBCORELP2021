@@ -21,6 +21,8 @@ namespace WEBCORELP2021.Models.Dominio
         public string descricao { get; set; }
 
         public Medico medico { get; set; }
+        public int medicoID { get; set; }
         public Paciente paciente { get; set; }
+        public int pacienteID { get; set; }
     }
 }

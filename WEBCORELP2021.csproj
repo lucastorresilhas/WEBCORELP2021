@@ -6,9 +6,27 @@
 
   <ItemGroup>
     <Compile Remove="Models\Modelo\**" />
+    <Compile Remove="Views\Pacientes1\**" />
+    <Compile Remove="Views\Pacientes\**" />
     <Content Remove="Models\Modelo\**" />
+    <Content Remove="Views\Pacientes1\**" />
+    <Content Remove="Views\Pacientes\**" />
     <EmbeddedResource Remove="Models\Modelo\**" />
+    <EmbeddedResource Remove="Views\Pacientes1\**" />
+    <EmbeddedResource Remove="Views\Pacientes\**" />
     <None Remove="Models\Modelo\**" />
+    <None Remove="Views\Pacientes1\**" />
+    <None Remove="Views\Pacientes\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Remove="Controllers\MedicosController.cs" />
+    <Compile Remove="Controllers\PacientesController.cs" />
+    <Compile Remove="Migrations\20210912153640_Anotacoes_v3.cs" />
+    <Compile Remove="Migrations\20210912153640_Anotacoes_v3.Designer.cs" />
+    <Compile Remove="Migrations\20210912155627_Anotacoes_teste.cs" />
+    <Compile Remove="Migrations\20210912155627_Anotacoes_teste.Designer.cs" />
+    <Compile Remove="Models\Mapeamento\IConventionEntityTypeBuilder.cs" />
   </ItemGroup>
 
   <ItemGroup>

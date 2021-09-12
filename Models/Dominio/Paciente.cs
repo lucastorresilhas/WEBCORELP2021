@@ -35,7 +35,7 @@ namespace WEBCORELP2021.Models.Dominio
         [Required(ErrorMessage ="Campo Obrigatório!")]
         public int idade { get; set; }
 
-        [DisplayName("E-mail")]
+        [DisplayName("Email")]
         [StringLength(50, ErrorMessage ="Tamanho inválido.")]
         //[DataType(DataType.EmailAddress, ErrorMessage ="E-mail inválido.")]
         [RegularExpression("^[a-zA-Z0-9+-]+[a-zA-Z0-9.+-][a-zA-Z0-9+-]+@[a-zA-Z0-9+-]+[a-zA-Z0-9._+-][.]{1,1}[a-zA-Z]{2,}$", ErrorMessage = "Email inválido")]
