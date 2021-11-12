@@ -6,6 +6,7 @@ namespace WEBCORELP2021.Migrations
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
+            //Teste PULL
             migrationBuilder.AlterColumn<string>(
                 name: "nome",
                 table: "Pacientes",
