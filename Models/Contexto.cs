@@ -11,7 +11,6 @@ namespace WEBCORELP2021.Models
     {
         public Contexto(DbContextOptions<Contexto> options) : base(options) { }
         public DbSet<Paciente> Pacientes { get; set; }
-        public DbSet<PlanoDeSaude> PlanosDeSaude { get; set; }
         public DbSet<Medico> Medicos { get; set; }
         public DbSet<Consulta> Consultas { get; set; }
     }

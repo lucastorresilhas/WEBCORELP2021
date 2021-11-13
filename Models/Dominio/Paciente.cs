@@ -49,7 +49,6 @@ namespace WEBCORELP2021.Models.Dominio
         [StringLength(14)]
         public string cpf { get; set; }
 
-        public ICollection<PlanoDeSaude> planoDeSaude { get; set; }
         public ICollection<Consulta> consultas { get; set; }
     }
 }
