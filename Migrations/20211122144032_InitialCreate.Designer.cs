@@ -9,8 +9,8 @@ using WEBCORELP2021.Models;
 namespace WEBCORELP2021.Migrations
 {
     [DbContext(typeof(Contexto))]
-    [Migration("20211122142655_Anotacoes_v8")]
-    partial class Anotacoes_v8
+    [Migration("20211122144032_InitialCreate")]
+    partial class InitialCreate
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {

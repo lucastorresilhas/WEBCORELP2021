@@ -13,5 +13,7 @@ namespace WEBCORELP2021.Models
         public DbSet<Paciente> Pacientes { get; set; }
         public DbSet<Medico> Medicos { get; set; }
         public DbSet<Consulta> Consultas { get; set; }
+
+        public DbSet<Estoque> Estoques { get; set; }
     }
 }
