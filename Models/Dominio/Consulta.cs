@@ -22,7 +22,14 @@ namespace WEBCORELP2021.Models.Dominio
 
         public Medico medico { get; set; }
         public int medicoID { get; set; }
+
         public Paciente paciente { get; set; }
         public int pacienteID { get; set; }
+
+        public Estoque estoque {get; set; }
+        public int estoqueID {get; set; }
+
+        [DisplayName("Quantidade")]
+        public int qtd_Estoque {get; set; }
     }
 }
